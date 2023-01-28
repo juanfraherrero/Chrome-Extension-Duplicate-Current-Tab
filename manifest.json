@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name":"Duplicate Tab",
+    "version":"1.0",
+    "description":"Duplicate current tab",
+    "icons": {
+        "16": "./images/DuplicateTabLogo16.png",
+        "32": "./images/DuplicateTabLogo32.png",
+        "48": "./images/DuplicateTabLogo48.png",
+        "128": "./images/DuplicateTabLogo128.png"
+      },
+    "permissions":["activeTab"],
+    "commands":{
+        "duplicate_tab":{
+            "suggested_key":{
+                "default":"Ctrl+Shift+2"
+            },
+            "description":"Duplicate current tab"
+        }        
+    },
+    "background": {
+        "service_worker": "./duplicate_tab.js"
+      }
+}
